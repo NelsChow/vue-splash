@@ -29,7 +29,6 @@ Import in template:
 ```vue
 <template>
   <vue-splash
-    :show="true"
     :logo="logo"
     title="Your Magnificent App Name"
     color="#00bfa5"
@@ -56,7 +55,6 @@ export default {
 
 | name              | type                             | default                          | description                                                            |
 | ----------------- | -------------------------------- | -------------------------------- | ---------------------------------------------------------------------- |
-| show              | Boolean                          | true                             | decide to show component                                               |
 | logo              | String                           | https://svgshare.com/i/NRE.svg   | image source to load your logo                                         |
 | title             | String                           | Your Magnificent App Name        | define app name                                                        |
 | custom-text       | String                           |                                  | write your custom text or html instead of title prop                   |
