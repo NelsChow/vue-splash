@@ -18,10 +18,6 @@
 export default {
   name: "VueSplash",
   props: {
-    show: {
-      type: Boolean,
-      default: true,
-    },
     logo: {
       type: String,
       default: "https://svgshare.com/i/NRE.svg",
@@ -77,6 +73,16 @@ export default {
       return {
         backgroundColor
       }
+    },
+
+    show(){
+      let val = true;
+
+      setTimeout(() => {
+        val = false;
+      }, 1000);
+
+      return val;
     }
   },
   methods: {
